@@ -1,3 +1,19 @@
+# Difference between bash and fish
+
+```shell
+# Short circuit:
+foo && bar      # bash
+foo; and bar    # fish
+
+# Redirect stderr: 
+./foo 2>outfile # bash
+./foo ^outfile  # fish
+
+# Command substitution: 
+file `which ls` # bash
+file (which ls) # fish
+```
+
 # some useful shell commands
 
 ### grep 
